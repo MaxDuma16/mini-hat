@@ -1,0 +1,150 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* Header */
+.headerWrapper {
+  display: flex;
+}
+
+.headerMain {
+  display: flex;
+}
+
+.channelTitle {
+  color:black;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.channelDescription {
+  color:black;
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.btnLogout {
+  margin: 15px 0 15px 220px;
+  padding: 7px;
+  display: block;
+  width: 60px;
+  height: 40px;
+  background-color: #1ca5b8;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btnLogout:hover {
+  background-color: #4cb2c0;
+}
+
+.channelData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anotherUserName {
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+}
+
+.isWritesTrue {
+  font-weight: 400;
+  color: black;
+  font-size: 11px;
+  visibility: visible;
+}
+
+.isWritesFalse {
+  font-weight: 400;
+  color: transparent;
+  font-size: 11px;
+  visibility: hidden;
+}
+
+/* Body */
+.bodyWrapper {
+  margin: 20px 0;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 520px;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.noMessages {
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.messageWrapper {
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.messageWrapperForMe {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* SendBlock */
+.sendBlockWrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 36%;
+  display: flex;
+}
+
+.textarea {
+  color: black;
+  padding: 8px;
+  width: 470px;
+  resize: none ;
+  overflow: visible;
+  border: 1px solid gray;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.textarea:focus {
+  outline: none;
+  border: 1px solid #2a9cff;
+}
+
+.btnSend {
+  padding: 10px;
+  display: block;
+  width: 60px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-left: 0;
+  cursor: pointer;
+  color: black;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btnSend:hover {
+  background-color: gray;
+}
+

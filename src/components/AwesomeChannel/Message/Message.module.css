@@ -1,0 +1,72 @@
+.mainWrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: inline-block;
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 7px;
+  background-color: rgb(221, 220, 220);
+}
+.wrapperForMe {
+  display: inline-block;
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 7px;
+  background-color: rgb(158, 158, 158);
+}
+
+.inner {
+  display: flex;
+  position: relative;
+}
+
+.userName {
+  color: black;
+  font-size: 12px;
+}
+
+.text {
+  padding:  0 10px 15px 10px;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: break-all;
+  line-break: auto;
+}
+
+.deleteCross {
+  display: none;
+  padding: 0;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  font-weight: 500;
+  color: red;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid gray;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mainWrapper:hover .deleteCross {
+  display: block;
+}
+
+.timeWrapper {
+  display: flex;
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.time {
+  color: rgb(77, 77, 77);
+  font-size: 10px;
+}

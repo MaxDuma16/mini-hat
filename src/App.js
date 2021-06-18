@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { Redirect, Route, Switch } from "react-router";
+import Login from './components/Login/Login';
+import Main from './components/Main/Main';
+import NewChannel from './components/NewChannel/NewChannel';
+import AwesomeChannel from './components/AwesomeChannel/AwesomeChannel';
+import NotFound from './components/NotFound/NotFound';
+import MessagesState from './context/MessagesState';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MessagesState>
+        <Switch>
+          <Redirect exact from="/" to="/main" />
+          <Route path="/login" component={Login}/>
+          <Route path="/main" component={Main}/>
+          <Route path="/newChannel" component={NewChannel}/>
+          <Route exact path="/channel/:id?" component={AwesomeChannel}/>
+          <Route path="*" component={NotFound}/>
+          </Switch>
+      </MessagesState>
     </div>
   );
-}
-
+};
 export default App;
